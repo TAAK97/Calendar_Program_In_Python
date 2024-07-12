@@ -1,25 +1,5 @@
-# print("THIS PROGRAM IS BUILT BY DHAIRYA TAAK AS ASSIGNMENT 3 FOR THE COURSE PROG12853. IT ASKS THE USER FOR A YEAR AND DISPLAYS THE CALENDAR. I FINISHED THIS ASSIGNMENT ON 21 MARCH 2024")
-# user_year_input=int(input("PLEASE ENTER A YEAR BETWEEN 1970 AND 2030\t:\t"))
-# if user_year_input%4==0 and user_year_input%100!=0:
-#     type_year=True
-# else:
-#     type_year=False
-
-# if user_year_input<1970 or user_year_input>2030:
-#     while True:
-#         user_year_input=int(input("PLEASE ENTER A VALID VALUE \n YEAR SHOULD BE BETWEEN 1970 AND 2030\t:\t"))
-#         if user_year_input>1970 or user_year_input<2030:
-#             break
-# if user_year_input%4==0 and user_year_input%100!=0:
-#     type_year=True
-# else:
-#     type_year=False
-# NAME= DHAIRYA TAAK
-# COURSE = COMPUTER PROGRAMMING
-# PLEASE IGNORE ABOVE CODE IT WAS USED FOR TESTING
-
+import time
 type_year=False
-# print("THIS PROGRAM IS BUILT BY DHAIRYA TAAK AS ASSIGNMENT 3 FOR THE COURSE PROG12853. IT ASKS THE USER FOR A YEAR AND DISPLAYS THE CALENDAR. I FINISHED THIS ASSIGNMENT ON 21 MARCH 2024")
 def firstfunction(year):
     # this function determines the offset
     years_difference=year-1970
@@ -37,6 +17,7 @@ def firstfunction(year):
 # 6 saturday
 # print(firstfunction(user_year_input))
 def secondfunction(month_n,offset,type_year):
+    time.sleep(0.01)
     # print(type_year)
     if month_n==1:
         month_offset=offset
